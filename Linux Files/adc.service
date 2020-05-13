@@ -1,0 +1,14 @@
+[Unit]
+Description=ADC program
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/Desktop
+ExecStart=/home/pi/Desktop/adc
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
